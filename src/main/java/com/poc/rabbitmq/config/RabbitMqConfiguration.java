@@ -33,17 +33,13 @@ public class RabbitMqConfiguration {
     return new CustomExchange(Constant.DELAY_TEST_EXCHANGE, "x-delayed-message", true, false, args);
   }
 
-  /**
-   * Order delay plug in queue
-   */
+
   @Bean
   public Queue testDelayQueue() {
     return new Queue(Constant.DELAY_TEST_QUEUE);
   }
 
-  /**
-   * Bind order delay plug-in queue to switch
-   */
+
   @Bean
   public Binding testDelayBinding(CustomExchange testDelayDirect, Queue testDelayQueue) {
     return BindingBuilder
