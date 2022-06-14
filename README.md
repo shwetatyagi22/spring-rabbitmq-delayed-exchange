@@ -34,7 +34,7 @@ Once exchange is configured, create queue and bind it to delayed exchange using 
   }
 
   /**
-   * Bind order delay queue to exchange
+   * Bind delay queue to exchange
    */
   @Bean
   public Binding testDelayBinding(CustomExchange testDelayDirect, Queue testDelayQueue) {
