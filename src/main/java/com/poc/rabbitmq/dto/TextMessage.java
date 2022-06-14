@@ -1,4 +1,4 @@
-package com.poc.rabbitmq.test;
+package com.poc.rabbitmq.dto;
 
 /**
  * @author shweta.tyagi

@@ -1,5 +1,7 @@
-package com.poc.rabbitmq.test;
+package com.poc.rabbitmq.consumer;
 
+import com.poc.rabbitmq.config.Constant;
+import com.poc.rabbitmq.dto.TextMessage;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 

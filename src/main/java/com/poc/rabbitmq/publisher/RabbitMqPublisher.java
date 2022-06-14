@@ -1,5 +1,6 @@
-package com.poc.rabbitmq.test;
+package com.poc.rabbitmq.publisher;
 
+import com.poc.rabbitmq.dto.TextMessage;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;

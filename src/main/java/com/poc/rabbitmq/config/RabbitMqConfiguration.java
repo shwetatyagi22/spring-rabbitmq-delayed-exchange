@@ -1,4 +1,4 @@
-package com.poc.rabbitmq.test;
+package com.poc.rabbitmq.config;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.HashMap;
 import java.util.Map;
