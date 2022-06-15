@@ -6,7 +6,7 @@ In this repository, I have tried to implement delayed messaging in rabbitmq usin
 RabbitMQ does not support delayed messages, we need to add delayed plugin to RabbitMQ to 
 enable delayed-messaging (or scheduled-messaging). 
 ### Installation
-You can delayed plugin is available from github (https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases).
+Delayed plugin is available from github (https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases).
 
 To enable the plugin, run the below command:
 
