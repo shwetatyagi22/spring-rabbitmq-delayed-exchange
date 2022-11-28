@@ -6,12 +6,15 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - env:
+      outputs:
+        - env:
           GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
-      - uses: actions/checkout@v2
-      - name: Bump version and push tag
-        id: tag_version
-        uses: shwetatyagi22/spring-rabbitmq-delayed-exchange@v1.0
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      new_tag: ${{ steps.tag_version.outputs.new_tag }}
+      steps:
+        - uses: actions/checkout@v2
+        - name: Bump version and push tag
+          id: tag_version
+          uses: shwetatyagi22/spring-rabbitmq-delayed-exchange@v0.0.1
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            tag_prefix: ""
