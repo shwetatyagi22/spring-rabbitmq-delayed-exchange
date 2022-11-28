@@ -9,7 +9,6 @@ jobs:
     outputs:
       - env:
         GITHUB_TOKEN: ${{ secrets.MY_TOKEN }}
-    new_tag: ${{ steps.tag_version.outputs.new_tag }}
     steps:
       - uses: actions/checkout@v2
       - name: Bump version and push tag
