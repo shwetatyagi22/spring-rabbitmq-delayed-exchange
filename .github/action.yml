@@ -1,0 +1,15 @@
+name: Bump version
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Bump version and push tag
+        id: tag_version
+        uses: shwetatyagi22/spring-rabbitmq-delayed-exchange@v1.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
