@@ -10,3 +10,7 @@ jobs:
         run:
           pwd
           ls -a
+          echo $GITHUB_SHA
+          echo "${{github.token}}"
+      - name: Checkout
+        uses: actions/checkout@v1
